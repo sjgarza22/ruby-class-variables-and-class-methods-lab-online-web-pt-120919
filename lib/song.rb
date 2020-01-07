@@ -17,19 +17,19 @@ class Song
     
   end
   
-  def count
+  def self.count
     @@count
   end
   
-  def genres
+  def self.genres
     @@genres.uniq!
   end
   
-  def artists
+  def self.artists
     @@artists.uniq!
   end
   
-  def genre_count
+  def self.genre_count
     genre_hash = {}
     
     @@genres.each do |genre|
